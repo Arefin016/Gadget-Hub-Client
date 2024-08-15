@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { AuthContext } from "../../providers/AuthProvider"
 import { Link } from "react-router-dom"
 
-const Registration = () => {
+const Login = () => {
   const { signIn } = useContext(AuthContext)
 
   const handleLogin = (event) => {
@@ -20,22 +20,10 @@ const Registration = () => {
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Registration Now!</h1>
+          <h1 className="text-5xl font-bold">Login now!</h1>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
           <form onSubmit={handleLogin} className="card-body">
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Name</span>
-              </label>
-              <input
-                type="name"
-                name="name"
-                placeholder="name"
-                className="input input-bordered"
-                required
-              />
-            </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -66,18 +54,16 @@ const Registration = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <input
-                className="btn btn-primary"
-                type="submit"
-                value="Registration"
-              />
+              <input className="btn btn-primary" type="submit" value="Login" />
             </div>
           </form>
           <p className="text-center mb-5">
-            Already have an account?{" "}
-            <span className="text-blue-600 font-bold">
-              <Link to={"/login"}>Login</Link>
-            </span>
+            <small>
+              New Here?{" "}
+              <span className="text-blue-600 font-bold">
+                <Link to={"/registration"}>Create An Account? </Link>
+              </span>
+            </small>
           </p>
         </div>
       </div>
@@ -85,4 +71,4 @@ const Registration = () => {
   )
 }
 
-export default Registration
+export default Login
