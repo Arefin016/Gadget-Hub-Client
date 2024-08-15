@@ -24,7 +24,7 @@ const NavBar = () => {
     </>
   )
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-slate-400">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -58,6 +58,13 @@ const NavBar = () => {
       <div className="navbar-end">
         {user ? (
           <>
+            <div className="lg:tooltip lg:mt-4" data-tip={user?.displayName}>
+              <div className="avatar">
+                <div className="w-12 rounded-full">
+                  <img src={user?.photoURL} />
+                </div>
+              </div>
+            </div>
             <button onClick={handleLogOut} className="btn btn-active btn-ghost">
               Registration
             </button>
@@ -68,9 +75,6 @@ const NavBar = () => {
               <Link to={"/login"}>Login</Link>
             </button>
           </>
-          // <Link to="/registration">
-          //   <li className="btn">Registration</li>
-          // </Link>
         )}
       </div>
     </div>
@@ -78,7 +82,3 @@ const NavBar = () => {
 }
 
 export default NavBar
-
-/**
- * <button className="btn btn-active btn-ghost">Ghost</button>
- */

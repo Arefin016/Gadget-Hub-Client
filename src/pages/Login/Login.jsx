@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { AuthContext } from "../../providers/AuthProvider"
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
+import SocialLogin from "../../components/SocialLogin/SocialLogin"
 
 const Login = () => {
   const { signIn } = useContext(AuthContext)
@@ -78,6 +79,9 @@ const Login = () => {
               </span>
             </small>
           </p>
+          <div className="text-center mb-5">
+            <SocialLogin></SocialLogin>
+          </div>
         </div>
       </div>
     </div>
