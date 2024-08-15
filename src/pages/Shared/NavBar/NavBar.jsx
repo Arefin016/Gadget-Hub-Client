@@ -1,15 +1,25 @@
-import React from "react"
+import React, { useContext } from "react"
 import logo from "../../../assets/Logo/GadgetHub.png"
 import { Link } from "react-router-dom"
+import { AuthContext } from "../../../providers/AuthProvider"
 
 const NavBar = () => {
+  const { user, logOut } = useContext(AuthContext)
+
+  // logout
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error))
+  }
+
   const navOptions = (
     <>
       <li>
         <a>Home</a>
       </li>
       <li>
-        <a>All Categories</a>
+        <Link to={"/allCategories"}>All Categories</Link>
       </li>
     </>
   )
@@ -46,12 +56,29 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">{navOptions}</ul>
       </div>
       <div className="navbar-end">
-        <Link to="/registration">
-          <li className="btn">Registration</li>
-        </Link>
+        {user ? (
+          <>
+            <button onClick={handleLogOut} className="btn btn-active btn-ghost">
+              Registration
+            </button>
+          </>
+        ) : (
+          <>
+            <button className="btn btn-active btn-ghost">
+              <Link to={"/login"}>Login</Link>
+            </button>
+          </>
+          // <Link to="/registration">
+          //   <li className="btn">Registration</li>
+          // </Link>
+        )}
       </div>
     </div>
   )
 }
 
 export default NavBar
+
+/**
+ * <button className="btn btn-active btn-ghost">Ghost</button>
+ */
