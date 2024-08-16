@@ -31,6 +31,7 @@ const router = createBrowserRouter([
             <AllCategories></AllCategories>
           </PrivateRoute>
         ),
+        loader: () => fetch("http://localhost:5000/allCategoriesCount"),
       },
       {
         path: "/purchase/:id",
