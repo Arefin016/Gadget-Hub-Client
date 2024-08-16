@@ -1,0 +1,402 @@
+[
+  {
+    "_id": "001",
+    "productName": "Ultra HD Smart TV",
+    "productImage": "https://i.postimg.cc/G2VsqbBn/pexels-cottonbro-4009402.jpg",
+    "description": "Experience vivid colors and stunning clarity with this 65-inch Ultra HD Smart TV.",
+    "price": 1200.99,
+    "category": "Electronics",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-16T20:00:00Z"
+  },
+  {
+    "_id": "002",
+    "productName": "4K Drone with Camera",
+    "productImage": "https://i.postimg.cc/HkYj0rS7/pexels-inmortal-producciones-108299-336232.jpg",
+    "description": "Advanced drone with 4K camera, GPS, and real-time video transmission.",
+    "price": 999.99,
+    "category": "Drones",
+    "ratings": 4.8,
+    "productCreationDateTime": "2024-08-16T20:30:00Z"
+  },
+  {
+    "_id": "003",
+    "productName": "Wireless Charging Stand",
+    "productImage": "https://i.postimg.cc/RFH0CK02/pexels-vanessa-loring-7869238.jpg",
+    "description": "Convenient wireless charging stand for smartphones and other compatible devices.",
+    "price": 59.99,
+    "category": "Accessories",
+    "ratings": 4.3,
+    "productCreationDateTime": "2024-08-16T21:00:00Z"
+  },
+  {
+    "_id": "004",
+    "productName": "Portable Bluetooth Speaker",
+    "productImage": "https://i.postimg.cc/gkd0dwbB/pexels-burst-374770.jpg",
+    "description": "Lightweight and portable Bluetooth speaker with crystal-clear sound and deep bass.",
+    "price": 89.99,
+    "category": "Audio",
+    "ratings": 4.6,
+    "productCreationDateTime": "2024-08-16T21:30:00Z"
+  },
+  {
+    "_id": "005",
+    "productName": "Smart Doorbell with Camera",
+    "productImage": "https://i.postimg.cc/ZYPTfTvP/pexels-uriel-mont-6271328.jpg",
+    "description": "Smart doorbell with built-in camera, motion detection, and mobile app notifications.",
+    "price": 149.99,
+    "category": "Smart Home",
+    "ratings": 4.5,
+    "productCreationDateTime": "2024-08-16T22:00:00Z"
+  },
+  {
+    "_id": "006",
+    "productName": "Wireless Gaming Mouse",
+    "productImage": "https://i.postimg.cc/pdnvKxtF/pexels-soginoto-495844134-18441494.jpg",
+    "description": "Precision wireless gaming mouse with customizable buttons and RGB lighting.",
+    "price": 79.99,
+    "category": "Accessories",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-16T22:30:00Z"
+  },
+  {
+    "_id": "007",
+    "productName": "VR Headset Pro",
+    "productImage": "https://i.postimg.cc/9XBhdJsJ/pexels-michelangelo-buonarroti-8728562.jpg",
+    "description": "Immersive VR headset with high-resolution display and motion tracking.",
+    "price": 499.99,
+    "category": "Virtual Reality",
+    "ratings": 4.8,
+    "productCreationDateTime": "2024-08-16T23:00:00Z"
+  },
+  {
+    "_id": "008",
+    "productName": "Smart Light Bulbs (4-Pack)",
+    "productImage": "https://i.postimg.cc/9FKC0z6h/37791.jpg",
+    "description": "Energy-efficient smart light bulbs with adjustable brightness and color settings.",
+    "price": 79.99,
+    "category": "Smart Home",
+    "ratings": 4.6,
+    "productCreationDateTime": "2024-08-16T23:30:00Z"
+  },
+  {
+    "_id": "009",
+    "productName": "Wireless Bluetooth Earbuds",
+    "productImage": "https://i.postimg.cc/Bby9jwwg/fitness-girl-with-wireless-headphones.jpg",
+    "description": "Compact and wireless Bluetooth earbuds with excellent sound quality and noise isolation.",
+    "price": 149.99,
+    "category": "Audio",
+    "ratings": 4.5,
+    "productCreationDateTime": "2024-08-17T00:00:00Z"
+  },
+  {
+    "_id": "010",
+    "productName": "Gaming Console X",
+    "productImage": "https://example.com/images/gaming_console_x.jpg",
+    "description": "Next-gen gaming console with 4K graphics and ultra-fast load times.",
+    "price": 499.99,
+    "category": "Gaming",
+    "ratings": 4.9,
+    "productCreationDateTime": "2024-08-17T00:30:00Z"
+  },
+  {
+    "_id": "011",
+    "productName": "Smart Refrigerator",
+    "productImage": "https://example.com/images/smart_refrigerator.jpg",
+    "description": "High-tech smart refrigerator with touch screen display and built-in cameras.",
+    "price": 2299.99,
+    "category": "Home Appliances",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-17T01:00:00Z"
+  },
+  {
+    "_id": "012",
+    "productName": "Noise Cancelling Over-Ear Headphones",
+    "productImage": "https://example.com/images/noise_cancelling_over_ear_headphones.jpg",
+    "description": "Over-ear headphones with active noise cancellation and rich sound quality.",
+    "price": 249.99,
+    "category": "Audio",
+    "ratings": 4.6,
+    "productCreationDateTime": "2024-08-17T01:30:00Z"
+  },
+  {
+    "_id": "013",
+    "productName": "Portable HD Projector",
+    "productImage": "https://example.com/images/portable_hd_projector.jpg",
+    "description": "Compact HD projector with bright image quality and built-in speakers.",
+    "price": 399.99,
+    "category": "Home Theater",
+    "ratings": 4.5,
+    "productCreationDateTime": "2024-08-17T02:00:00Z"
+  },
+  {
+    "_id": "014",
+    "productName": "Wireless Home Security Camera",
+    "productImage": "https://example.com/images/wireless_home_security_camera.jpg",
+    "description": "Wireless security camera with night vision, motion detection, and remote viewing.",
+    "price": 179.99,
+    "category": "Security",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-17T02:30:00Z"
+  },
+  {
+    "_id": "015",
+    "productName": "Smart Wi-Fi Router",
+    "productImage": "https://example.com/images/smart_wifi_router.jpg",
+    "description": "High-speed Wi-Fi router with smart home integration and parental controls.",
+    "price": 199.99,
+    "category": "Networking",
+    "ratings": 4.8,
+    "productCreationDateTime": "2024-08-17T03:00:00Z"
+  },
+  {
+    "_id": "016",
+    "productName": "Bluetooth Noise Cancelling Headphones",
+    "productImage": "https://example.com/images/bluetooth_noise_cancelling_headphones.jpg",
+    "description": "Premium Bluetooth headphones with active noise cancellation and rich bass.",
+    "price": 299.99,
+    "category": "Audio",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-17T03:30:00Z"
+  },
+  {
+    "_id": "017",
+    "productName": "Smart Door Lock",
+    "productImage": "https://example.com/images/smart_door_lock.jpg",
+    "description": "Keyless smart door lock with mobile app control and fingerprint recognition.",
+    "price": 199.99,
+    "category": "Smart Home",
+    "ratings": 4.6,
+    "productCreationDateTime": "2024-08-17T04:00:00Z"
+  },
+  {
+    "_id": "018",
+    "productName": "Wireless Earbuds with Charging Case",
+    "productImage": "https://example.com/images/wireless_earbuds_charging_case.jpg",
+    "description": "Wireless earbuds with noise cancellation and compact charging case.",
+    "price": 129.99,
+    "category": "Audio",
+    "ratings": 4.4,
+    "productCreationDateTime": "2024-08-17T04:30:00Z"
+  },
+  {
+    "_id": "019",
+    "productName": "Smart Home Security System",
+    "productImage": "https://example.com/images/smart_home_security_system.jpg",
+    "description": "Complete smart home security system with cameras, sensors, and mobile alerts.",
+    "price": 499.99,
+    "category": "Security",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-17T05:00:00Z"
+  },
+  {
+    "_id": "020",
+    "productName": "Wireless Noise Cancelling Earphones",
+    "productImage": "https://example.com/images/wireless_noise_cancelling_earphones.jpg",
+    "description": "In-ear wireless earphones with noise cancellation and deep bass.",
+    "price": 149.99,
+    "category": "Audio",
+    "ratings": 4.5,
+    "productCreationDateTime": "2024-08-17T05:30:00Z"
+  },
+  {
+    "_id": "021",
+    "productName": "Smart Robot Vacuum Cleaner",
+    "productImage": "https://example.com/images/smart_robot_vacuum_cleaner.jpg",
+    "description": "Automated robot vacuum cleaner with smart navigation and remote control.",
+    "price": 299.99,
+    "category": "Home Appliances",
+    "ratings": 4.6,
+    "productCreationDateTime": "2024-08-17T06:00:00Z"
+  },
+  {
+    "_id": "022",
+    "productName": "Wireless Bluetooth Speaker",
+    "productImage": "https://example.com/images/wireless_bluetooth_speaker.jpg",
+    "description": "Portable Bluetooth speaker with powerful sound and long battery life.",
+    "price": 79.99,
+    "category": "Audio",
+    "ratings": 4.5,
+    "productCreationDateTime": "2024-08-17T06:30:00Z"
+  },
+  {
+    "_id": "023",
+    "productName": "Smart Thermostat",
+    "productImage": "https://example.com/images/smart_thermostat.jpg",
+    "description": "Smart thermostat with Wi-Fi connectivity and energy-saving features.",
+    "price": 249.99,
+    "category": "Smart Home",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-17T07:00:00Z"
+  },
+  {
+    "_id": "024",
+    "productName": "Bluetooth Tracker",
+    "productImage": "https://example.com/images/bluetooth_tracker.jpg",
+    "description": "Compact Bluetooth tracker for finding lost items with your smartphone.",
+    "price": 39.99,
+    "category": "Accessories",
+    "ratings": 4.3,
+    "productCreationDateTime": "2024-08-17T07:30:00Z"
+  },
+  {
+    "_id": "025",
+    "productName": "Wireless Charging Pad",
+    "productImage": "https://example.com/images/wireless_charging_pad.jpg",
+    "description": "Fast wireless charging pad for smartphones and other compatible devices.",
+    "price": 49.99,
+    "category": "Accessories",
+    "ratings": 4.6,
+    "productCreationDateTime": "2024-08-17T08:00:00Z"
+  },
+  {
+    "_id": "026",
+    "productName": "Smart LED Light Strip",
+    "productImage": "https://example.com/images/smart_led_light_strip.jpg",
+    "description": "Customizable smart LED light strip with app control and multiple color options.",
+    "price": 59.99,
+    "category": "Smart Home",
+    "ratings": 4.5,
+    "productCreationDateTime": "2024-08-17T08:30:00Z"
+  },
+  {
+    "_id": "027",
+    "productName": "Bluetooth Fitness Tracker",
+    "productImage": "https://example.com/images/bluetooth_fitness_tracker.jpg",
+    "description": "Fitness tracker with heart rate monitor, step counter, and sleep tracking.",
+    "price": 99.99,
+    "category": "Wearables",
+    "ratings": 4.4,
+    "productCreationDateTime": "2024-08-17T09:00:00Z"
+  },
+  {
+    "_id": "028",
+    "productName": "Noise Cancelling Bluetooth Headphones",
+    "productImage": "https://example.com/images/noise_cancelling_bluetooth_headphones.jpg",
+    "description": "Wireless over-ear headphones with noise cancellation and crystal-clear sound.",
+    "price": 199.99,
+    "category": "Audio",
+    "ratings": 4.8,
+    "productCreationDateTime": "2024-08-17T09:30:00Z"
+  },
+  {
+    "_id": "029",
+    "productName": "Smart Home Lighting System",
+    "productImage": "https://example.com/images/smart_home_lighting_system.jpg",
+    "description": "Complete smart lighting system with app control and voice commands.",
+    "price": 399.99,
+    "category": "Smart Home",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-17T10:00:00Z"
+  },
+  {
+    "_id": "030",
+    "productName": "Bluetooth Smartwatch",
+    "productImage": "https://example.com/images/bluetooth_smartwatch.jpg",
+    "description": "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
+    "price": 149.99,
+    "category": "Wearables",
+    "ratings": 4.5,
+    "productCreationDateTime": "2024-08-17T10:30:00Z"
+  },
+  {
+    "_id": "031",
+    "productName": "Portable Solar Power Bank",
+    "productImage": "https://example.com/images/portable_solar_power_bank.jpg",
+    "description": "Eco-friendly solar power bank with fast charging and multiple device support.",
+    "price": 59.99,
+    "category": "Accessories",
+    "ratings": 4.6,
+    "productCreationDateTime": "2024-08-17T11:00:00Z"
+  },
+  {
+    "_id": "032",
+    "productName": "Smart Home Camera System",
+    "productImage": "https://example.com/images/smart_home_camera_system.jpg",
+    "description": "Complete home camera system with night vision, motion detection, and app control.",
+    "price": 299.99,
+    "category": "Security",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-17T11:30:00Z"
+  },
+  {
+    "_id": "033",
+    "productName": "Smart Wi-Fi Plug",
+    "productImage": "https://example.com/images/smart_wifi_plug.jpg",
+    "description": "Smart Wi-Fi plug for controlling appliances remotely via smartphone app.",
+    "price": 29.99,
+    "category": "Smart Home",
+    "ratings": 4.4,
+    "productCreationDateTime": "2024-08-17T12:00:00Z"
+  },
+  {
+    "_id": "034",
+    "productName": "Bluetooth Sleep Headphones",
+    "productImage": "https://example.com/images/bluetooth_sleep_headphones.jpg",
+    "description": "Comfortable Bluetooth sleep headphones with ultra-thin speakers and soft headband.",
+    "price": 39.99,
+    "category": "Audio",
+    "ratings": 4.3,
+    "productCreationDateTime": "2024-08-17T12:30:00Z"
+  },
+  {
+    "_id": "035",
+    "productName": "Portable Bluetooth Keyboard",
+    "productImage": "https://example.com/images/portable_bluetooth_keyboard.jpg",
+    "description": "Compact and portable Bluetooth keyboard with long battery life and ergonomic design.",
+    "price": 49.99,
+    "category": "Accessories",
+    "ratings": 4.5,
+    "productCreationDateTime": "2024-08-17T13:00:00Z"
+  },
+  {
+    "_id": "036",
+    "productName": "Smart Home Air Purifier",
+    "productImage": "https://example.com/images/smart_home_air_purifier.jpg",
+    "description": "Smart air purifier with HEPA filter, app control, and air quality monitoring.",
+    "price": 249.99,
+    "category": "Home Appliances",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-17T13:30:00Z"
+  },
+  {
+    "_id": "037",
+    "productName": "Wireless Bluetooth Headset",
+    "productImage": "https://example.com/images/wireless_bluetooth_headset.jpg",
+    "description": "Comfortable Bluetooth headset with clear audio and long battery life.",
+    "price": 69.99,
+    "category": "Audio",
+    "ratings": 4.5,
+    "productCreationDateTime": "2024-08-17T14:00:00Z"
+  },
+  {
+    "_id": "038",
+    "productName": "Smart Wi-Fi Light Switch",
+    "productImage": "https://example.com/images/smart_wifi_light_switch.jpg",
+    "description": "Smart Wi-Fi light switch with app control and voice assistant compatibility.",
+    "price": 59.99,
+    "category": "Smart Home",
+    "ratings": 4.6,
+    "productCreationDateTime": "2024-08-17T14:30:00Z"
+  },
+  {
+    "_id": "039",
+    "productName": "Bluetooth Car Adapter",
+    "productImage": "https://example.com/images/bluetooth_car_adapter.jpg",
+    "description": "Bluetooth car adapter for hands-free calls and wireless music streaming.",
+    "price": 29.99,
+    "category": "Accessories",
+    "ratings": 4.3,
+    "productCreationDateTime": "2024-08-17T15:00:00Z"
+  },
+  {
+    "_id": "040",
+    "productName": "Smart Wi-Fi Doorbell",
+    "productImage": "https://example.com/images/smart_wifi_doorbell.jpg",
+    "description": "Smart Wi-Fi doorbell with camera, two-way audio, and motion detection.",
+    "price": 129.99,
+    "category": "Security",
+    "ratings": 4.7,
+    "productCreationDateTime": "2024-08-17T15:30:00Z"
+  }
+]
