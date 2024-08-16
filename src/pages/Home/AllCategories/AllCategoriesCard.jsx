@@ -1,13 +1,7 @@
+import { Link } from "react-router-dom"
+
 const AllCategoriesCard = ({ item }) => {
-  const {
-    productName,
-    productImage,
-    description,
-    price,
-    category,
-    ratings,
-    productCreationDateTime,
-  } = item
+  const { productName, productImage, description, price, category, _id } = item
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
       <figure>
@@ -18,8 +12,10 @@ const AllCategoriesCard = ({ item }) => {
         <p>Desc: {description}</p>
         <p>Price: ${price}</p>
         <h2>Category: {category}</h2>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <div className="card-actions">
+          <Link to={`/purchase/${_id}`}>
+            <button className="btn btn-accent">Purchase Now</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import Registration from "../pages/Registration/Registration"
 import Login from "../pages/Login/Login"
 import AllCategories from "../pages/AllCategories/AllCategories"
 import PrivateRoute from "./PrivateRoute"
+import AllCateDetailsPage from "../pages/AllCateDetailsPage/AllCateDetailsPage"
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,17 @@ const router = createBrowserRouter([
             <AllCategories></AllCategories>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/purchase/:id",
+        element: (
+          <PrivateRoute>
+            {" "}
+            <AllCateDetailsPage></AllCateDetailsPage>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/allCategories/${params.id}`),
       },
     ],
   },

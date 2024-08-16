@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react"
 import AllCategoriesCard from "./AllCategoriesCard"
+import { Link } from "react-router-dom"
 
 const AllCategories = () => {
   const [allCategories, setAllCategories] = useState([])
+  const [dataLength, setDataLength] = useState(6)
 
   useEffect(() => {
-    fetch("allCategories.json")
+    fetch("http://localhost:5000/allCategories")
       .then((res) => res.json())
       .then((data) => setAllCategories(data))
   }, [])
@@ -23,9 +25,19 @@ const AllCategories = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-5">
-        {allCategories.map((item) => (
+        {allCategories.slice(0, dataLength).map((item) => (
           <AllCategoriesCard key={item._id} item={item}></AllCategoriesCard>
         ))}
+      </div>
+      <div className="md:flex items-center justify-center">
+        <Link to="/allCategories">
+          <button
+            onClick={() => setDataLength(allCategories.length)}
+            className="btn btn-outline bg-purple-500 border-0 border-b-4 my-3 text-center"
+          >
+            All Categories
+          </button>
+        </Link>
       </div>
     </div>
   )
