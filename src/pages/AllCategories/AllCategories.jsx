@@ -7,6 +7,7 @@ import "./AllCategories.css"
 
 const AllCategories = () => {
   const [totalcategories, setTotalCategories] = useState([])
+  const [currentPage, setCurrentPage] = useState(0)
   const [itemsPerPage, setItemsPerPage] = useState(5)
   const { count } = useLoaderData()
   const numberOfPages = Math.ceil(count / itemsPerPage)
@@ -19,20 +20,38 @@ const AllCategories = () => {
 
   /**
    * DONE 1: get the total number of products
-   * TODO 2: number of items per page dynamic
+   * DONE 2: number of items per page dynamic
+   * TODO 3: get the current page
    */
 
   useEffect(() => {
-    fetch("http://localhost:5000/allCategories")
+    fetch(
+      `http://localhost:5000/allCategories?page=${currentPage}&size=${itemsPerPage}`
+    )
       .then((res) => res.json())
       .then((data) => setTotalCategories(data))
-  }, [])
+  }, [currentPage, itemsPerPage])
 
   //event change handler
   const handleItemsPerPage = (e) => {
     const val = parseInt(e.target.value)
     console.log(val)
     setItemsPerPage(val)
+    setCurrentPage(0)
+  }
+
+  const handlePrevPage = () => {
+    {
+      if (currentPage > 0) {
+        setCurrentPage(currentPage - 1)
+      }
+    }
+  }
+
+  const handleNextPage = () => {
+    if (currentPage < pages.length - 1) {
+      setCurrentPage(currentPage + 1)
+    }
   }
 
   return (
@@ -43,11 +62,18 @@ const AllCategories = () => {
         ))}
       </div>
       <div className="pagination">
+        <p>Current Page: {currentPage}</p>
+        <button onClick={handlePrevPage}>Prev</button>
         {pages.map((page) => (
-          <button className="btn btn-accent" key={page}>
+          <button
+            className={currentPage === page && "selected btn"}
+            onClick={() => setCurrentPage(page)}
+            key={page}
+          >
             {page}
           </button>
         ))}
+        <button onClick={handleNextPage}>Next</button>
         <select
           value={itemsPerPage}
           onChange={handleItemsPerPage}
