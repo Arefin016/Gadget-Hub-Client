@@ -4,9 +4,8 @@ import Banner from "../Banner/Banner"
 const Home = () => {
   return (
     <div>
-      {/* <Banner></Banner> */}
+      <Banner></Banner>
       <AllCategories></AllCategories>
-      <h2>This is Shah Arefin Ahmed</h2>
     </div>
   )
 }
